@@ -18,11 +18,12 @@ IMAGE_INSTALL_append = " \
     dpdk-examples \
     ovs-dpdk \
     pktgen-dpdk \
+    kernel-image \
 "
 
 IMAGE_FSTYPES_qoriq = "tar.gz ext2.gz.u-boot ext2.gz"
 
-inherit fsl-utils
+inherit util-sample
 ROOTFS_POSTPROCESS_COMMAND += "rootfs_copy_core_image;"
 do_image_complete[depends] += "sample-image-dpdk-guest:do_image_complete"
 
