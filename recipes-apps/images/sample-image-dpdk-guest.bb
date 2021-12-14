@@ -17,6 +17,7 @@ IMAGE_INSTALL_append = " \
     packagegroup-fsl-networking-core \
     dpdk \
     iperf2 \
+    pciutils \
     myapp \
 "
 
