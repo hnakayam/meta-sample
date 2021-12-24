@@ -18,6 +18,7 @@ IMAGE_INSTALL_append = " \
     dpdk \
     iperf2 \
     pciutils \
+    usbutils \
     myapp \
 "
 
